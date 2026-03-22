@@ -13,3 +13,7 @@ def test_add_negative():
 def test_add_type_error():
     with pytest.raises(TypeError):
         add("a", 1)
+
+def test_add_string_string_error():
+    with pytest.raises(TypeError):
+        add("a", "b")
